@@ -110,9 +110,11 @@ public class char_generator {
         
         ability_scores = new Integer[6];
         for(int i = 0; i < ability_scores.length; i++){
-            ability_scores[i] = random_generator.nextInt(16) + 3;
-        }
-        
+            ability_scores[i] = random_generator.nextInt(6) + 1 + 
+                    random_generator.nextInt(6) + 1 + 
+                    random_generator.nextInt(6) + 1;
+            }
+            
         Arrays.sort(ability_scores, Collections.reverseOrder());
     }
 }

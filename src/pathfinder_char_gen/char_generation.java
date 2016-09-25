@@ -36,7 +36,7 @@ public class char_generation {
             create_char.generate(new char_generator(char_type));
             
             System.out.print(create_char);
-        }while ("quit".equals(char_type));
+        }while (!"quit".equals(char_type));
     }
     
 }
